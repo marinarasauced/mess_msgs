@@ -7,7 +7,9 @@ find_package(catkin REQUIRED COMPONENTS
 
 add_message_files(
   FILES
+  MessToUAV.msg
   MessToUGV.msg
+  MessToUGVLogger.msg
 )
 
 catkin_package(
