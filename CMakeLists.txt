@@ -8,6 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   CalibrateUGV.msg
+  MessToCV.msg
   MessToUAV.msg
   MessToUGV.msg
   MessToUGVLogger.msg
