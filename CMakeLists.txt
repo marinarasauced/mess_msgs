@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(messmsg)
+project(mess_msgs)
 
 find_package(catkin REQUIRED COMPONENTS
   message_generation
@@ -7,9 +7,11 @@ find_package(catkin REQUIRED COMPONENTS
 
 add_message_files(
   FILES
+  CalibrateUGV.msg
   MessToUAV.msg
   MessToUGV.msg
   MessToUGVLogger.msg
+  StateUGV.msg
 )
 
 catkin_package(
