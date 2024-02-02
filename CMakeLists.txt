@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.0.2)
 project(mess_msgs)
 
 find_package(catkin REQUIRED COMPONENTS
+  std_msgs
   message_generation
 )
 
@@ -15,10 +16,11 @@ add_message_files(
   StateUGV.msg
 )
 
-catkin_package(
-  CATKIN_DEPENDS message_runtime
+generate_messages(
+  DEPENDENCIES
+  std_msgs
 )
 
-include_directories(
-  ${catkin_INCLUDE_DIRS}
+catkin_package(
+  CATKIN_DEPENDS std_msgs message_runtime
 )
