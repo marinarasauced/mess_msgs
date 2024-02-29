@@ -13,6 +13,7 @@ add_message_files(
   FILES
   CalibrateUGV.msg
   MESS2UGV.msg
+  StateUAV.msg
   StateUGV.msg
   UAV2MESSCV.msg
 )
